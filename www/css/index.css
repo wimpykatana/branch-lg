@@ -1,0 +1,371 @@
+@charset "utf-8";
+/* CSS Document */
+/* Import open-sans google font
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,latin-ext);
+*/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+/*-  variable
+----------------------------------------------------------------------*/
+:root{
+    --main-bg-color: #7ECFC9;
+}
+/*-  BASE STYLES
+----------------------------------------------------------------------*/
+body{
+
+    font-family: 'PT Sans', sans-serif !important;
+    /*background: #7ECFC9;*/
+    /*background-image: url("../img/bg.png");*/
+    /*background-size: cover;*/
+    font-weight: 400;
+    color: #333;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+h1  { }
+h2  { }
+h3  { }
+h4  { }
+p   { }
+a   		{ color: #fff !important; text-decoration: none; }
+a:hover   	{ }
+a:focus		{ }
+div { display: block; }
+img { width:100%; }
+.clear { clear: both; }
+.width100 { width: 100%; }
+.width75 { width: 75%; }
+.width50 { width: 50%; }
+.width25 { width: 25%; }
+.nopaddings {padding: 0 !important;}
+.nolpadding {padding-left: 0 !important;}
+.norpadding {padding-right: 0 !important;}
+.notpadding {padding-top: 0 !important;}
+.nobpadding {padding-bottom: 0 !important;}
+.nolrpadding {padding-left: 0 !important;padding-right: 0 !important;}
+.notbpadding {padding-top: 0 !important;padding-bottom: 0 !important;}
+/* ======================================================================================================
+   LAYOUT
+   ====================================================================================================== */
+.app{
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.naration-container{
+    padding: 10px;
+}
+
+.interaction-container{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.interaction-content{
+    padding: 0 10px;
+    display: block;
+    height: 100%;
+}
+
+.btn-container{
+    width: 50%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.btn-custom{
+    display: block;
+    /*margin: 10px;*/
+    height: 80%;
+    width: 86%;
+}
+
+.visual-container{
+    padding: 0 10px;
+}
+
+
+/*- NAVIGASI
+/*****************************************************************************/
+/*- CONTENT
+/*****************************************************************************/
+/*- FOOTER
+/*****************************************************************************/
+
+
+/* ======================================================================================================
+   MEDIA QUERY
+   ====================================================================================================== */
+/*********************************************************** GLOBAL RESPONSIVE */
+/********************************************************************************** MOBILE POTRAIT ********/
+@media (max-width: 480px) and (max-aspect-ratio: 13/9) {
+}
+/********************************************************************************** MOBILE LANDSCAPE ********/
+@media (min-width: 481px) and (max-width: 767px) and (min-aspect-ratio: 13/9) {
+}
+/********************************************************************************** TABLET POTRAIT ********/
+@media (min-width: 768px) and (max-width: 991px) and (max-aspect-ratio: 13/9) {
+}
+/********************************************************************************** TABLET LANDSCAPE ********/
+@media (min-width: 992px) and (max-width: 1199px) and (min-aspect-ratio: 13/9) {
+}
+
+@media (max-height: 480px ){
+    canvas{
+        margin: 10px auto;
+    }
+}
+
+/*********************************************************** WEARABLES */
+/* Apple Watch ----------- */
+@media
+(max-device-width: 42mm)
+and (min-device-width: 38mm) {
+    /* Styles */
+}
+@media
+(max-device-width: 218px)
+and (max-device-height: 281px) {
+}
+/*********************************************************** iPhones */
+/* --------------------------------------------------------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+
+}
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (max-aspect-ratio: 13/9) {
+    /* Styles */
+
+}
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-aspect-ratio: 13/9) {
+    /* Styles */
+
+}
+/* --------------------------------------------------------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+
+}
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (max-aspect-ratio: 13/9) {
+    /* Styles */
+
+}
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-aspect-ratio: 13/9) {
+    /* Styles */
+
+}
+/* --------------------------------------------------------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles */
+
+}
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (max-aspect-ratio: 13/9) {
+    /* Styles */
+
+}
+/* Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-aspect-ratio: 13/9) {
+    /* Styles */
+
+}
+/* --------------------------------------------------------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    /* Styles */
+
+}
+/* Portrait */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (max-aspect-ratio: 13/9) {
+    /* Styles */
+
+}
+/* Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (min-aspect-ratio: 13/9) {
+    /* Styles */
+}
+/*********************************************************** iPads */
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (max-aspect-ratio: 13/9)
+and (-webkit-min-device-pixel-ratio: 1) {
+    /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (min-aspect-ratio: 13/9)
+and (-webkit-min-device-pixel-ratio: 1) {
+    /* Styles */
+
+}
+/*********************************************************** Other desktop screen */
+/* Non-Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    /* Styles */
+
+}
+/* Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+    /* Styles */
+
+}
+/* Larger screens ----------- */
+@media only screen
+and (min-width : 1024px) {
+    /* Styles */
+
+}
+/*********************************************************** Print */
+/* Print style ----------- */
+@media print {
+    * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+        -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+    a, a:visited { color: #444 !important; text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3{ page-break-after: avoid; }
+}
+/* italic input placeholder
+*******************************/
+input::-webkit-input-placeholder { font-style: italic; }
+input:-moz-placeholder { font-style: italic; } /* FF 4-18 */
+input::-moz-placeholder { font-style: italic; } /* FF 19+ */
+input:-ms-input-placeholder { font-style: italic; } /* IE 10+ */
+/* remove input placeholder
+*******************************/
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+/* noscroll
+*******************************/
+.noscroll { overflow: hidden; }
+/* selection css
+*******************************/
+::selection {
+    background: #eac06e; /* Safari */
+    color: white;
+}
+::-moz-selection {
+    background: #eac06e; /* Firefox */
+    color: white;
+}
+/* remove outline chorme
+*******************************/
+textarea:focus,
+button:focus,
+select:focus,
+input:focus {
+    outline: 0 !important;
+}
+/* fix select dropdown
+*******************************/
+select{
+    /*-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background:  url('../images/icon/select-bg.png') no-repeat right center white !important;*/
+}
+/* hide input[type=number] spiner
+*************************************/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/*-  SELF-CLEARING FLOATS
+----------------------------------------------------------------------*/
+/*#page-wrap:after,*/
+.interaction-content:after
+{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+/********
+:)
+wimpy katana
+*/
