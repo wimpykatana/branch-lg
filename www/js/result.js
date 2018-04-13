@@ -27,30 +27,8 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        var allNarationitem = $(".content-naration").length;
-        var x = 1;
-        var narationID = "#content-naration-" + x;
 
         this.receivedEvent('deviceready');
-
-        // console.log(allNarationitem);
-        // console.log(narationID);
-
-        $(narationID).show();
-
-        $(".content-naration").click(function(){
-
-            x++;
-            if(x <= allNarationitem){
-                narationID = "#content-naration-" + x;
-                $(".content-naration").hide();
-                console.log(narationID);
-                $(narationID).show();
-            }if(x == allNarationitem){
-                $(".interaction-content").show();
-            }
-
-        });
 
     },
 
