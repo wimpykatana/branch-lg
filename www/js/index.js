@@ -27,19 +27,17 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+
+        //get all naration item at html
         var allNarationitem = $(".content-naration").length;
         var x = 1;
         var narationID = "#content-naration-" + x;
-
         this.receivedEvent('deviceready');
-
-        // console.log(allNarationitem);
-        // console.log(narationID);
 
         $(narationID).show();
 
-        $(".content-naration").click(function(){
-
+        //Click body to show next naration
+        $("body").click(function(){
             x++;
             if(x <= allNarationitem){
                 narationID = "#content-naration-" + x;
