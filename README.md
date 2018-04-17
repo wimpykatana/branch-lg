@@ -1,4 +1,4 @@
-## note
+## Note
 This branch just have simple link file
 
 ## What you need
