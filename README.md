@@ -1,3 +1,6 @@
+## note
+This branch just have simple link file
+
 ## What you need
 1. Instal node.js 
 	You can find node.js by download it from [here](https://nodejs.org/en/)
